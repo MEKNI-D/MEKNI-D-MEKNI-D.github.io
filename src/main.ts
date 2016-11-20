@@ -9,5 +9,9 @@ import { HTTP_PROVIDERS } from '@angular/http';
 import { AppComponent } from './app/app.component';
 import { AppModule } from './app/app.module';
 
+import {enableProdMode} from '@angular/core';
+
+enableProdMode();
+
 platformBrowserDynamic().bootstrapModule(AppModule);
 
