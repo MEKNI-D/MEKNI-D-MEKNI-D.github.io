@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Automation List</title>
+</head>
+<body>
+<div style="width: 900px; float: right">
+    <h1>Automation list </h1>
+<ul>
+    <li *ngFor="let w of widg">
+        <div>
+            {{w.description}}<a class="widget" target="_blank" href="https://pluga.co/{{w.url}}">See more</a>
+        </div>
+    </li></ul>
+
+    <a href="https://pluga.co/ferramentas" class="myButton">View all automations</a>
+</div>
+<router-outlet></router-outlet>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="float: left; width: 350px;">
+<ul> All apps
+    <li *ngFor="let w of widgets">
+        <div>
+            <img src="https://widget.pluga.co/img/icons-tools-page/pag_seguro-icon.svg">
+
+            <a [routerLink]="['/widget', w.app_id]">{{w.app_id}}</a>
+        </div>
+    </li></ul></div>
+<router-outlet></router-outlet>
+
+</body>
+</html>
