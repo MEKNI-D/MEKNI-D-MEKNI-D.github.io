@@ -2,6 +2,7 @@
   "name": "pluga-widget-starter",
   "version": "0.1.0",
   "scripts": {
+     "start": "npm run server:dev",
     "build": "webpack --progress",
     "build:prod": "webpack -p --progress",
     "preinstall": "npm i typings -g",
